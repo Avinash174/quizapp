@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/const.dart';
+import 'package:quizapp/play_quiz_screen.dart';
 
 class StartQuizScreen extends StatelessWidget {
   const StartQuizScreen({Key? key}) : super(key: key);
@@ -26,13 +27,15 @@ class StartQuizScreen extends StatelessWidget {
                   fontWeight: FontWeight.w600),
             ),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                 Navigator.push(context, MaterialPageRoute(builder: (context)=> PlayQuizScreen()));
+                },
                 style: ElevatedButton.styleFrom(
                   primary: foregroundColor,
                 ),
                 child: Text(
                   "Start Quiz",
-                  style: TextStyle(color: backgroungColor,fontSize: 20),
+                  style: TextStyle(color: backgroungColor, fontSize: 20),
                 ))
           ],
         ),
