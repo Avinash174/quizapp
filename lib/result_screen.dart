@@ -41,7 +41,7 @@ class ResultScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => PlayQuizScreen()),
                     (route) => false);
               },
-              style: ElevatedButton.styleFrom(primary: foregroundColor),
+              style: ElevatedButton.styleFrom(backgroundColor: foregroundColor),
               child: Text(
                 "Restart Quiz",
                 style: TextStyle(color: backgroungColor),

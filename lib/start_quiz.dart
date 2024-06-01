@@ -31,7 +31,7 @@ class StartQuizScreen extends StatelessWidget {
                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PlayQuizScreen()));
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: foregroundColor,
+                  backgroundColor: foregroundColor,
                 ),
                 child: Text(
                   "Start Quiz",
